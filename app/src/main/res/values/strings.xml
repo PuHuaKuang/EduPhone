@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EduPhone</string>
+    <string name="scan_text">请将二维码对准扫描框</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+
+    <string name="empty_view_tip">点击搜索云终端设备</string>
+
+    <string name="remotecontrol_text">远程控制云终端</string>
+    <string name="pushvideo_text">推送音视频到云终端</string>
+    <string name="pushfile_text">推送文件到云终端</string>
+    <string name="control_system_and_projector_text">控制系统与投影仪</string>
+    <string name="settings_text">配置云终端</string>
+
+    <string name="running_message_text">正在加载，请稍候...</string>
+
+</resources>

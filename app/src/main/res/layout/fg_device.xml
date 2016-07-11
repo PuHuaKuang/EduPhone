@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部设备"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/sp_select_device"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false"
+            android:background="@drawable/shape_drop_down_normal"
+            android:gravity="center_vertical" />
+
+<!--        <Spinner
+            android:id="@+id/sp_select_device"
+            android:alpha="0.5"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:background="@drawable/shape_drop_down_normal"
+            android:gravity="center_vertical" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/list_view_with_empty_view_fragment_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/empty_view_tip"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/list_view_with_empty_view_fragment_ptr_frame"
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="1000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/list_view_with_empty_view_fragment_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:divider="@mipmap/device_gap_line"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbarStyle="outsideOverlay" />
+
+            </FrameLayout>
+
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/app_content_bj"
+    tools:context="com.incast.udi.eduphone.RemoteControlActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/button_remotecontrol_backward"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@mipmap/icon_title_back"
+            android:paddingLeft="10dp"
+            android:gravity="center"  />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="远程控制"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/remote_control_container"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp" >
+
+        <com.incast.udi.eduphone.view.RemoteControlHardDecodeView
+            android:id="@+id/remote_control_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/opt_command_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="控制命令"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <include layout="@layout/layout_line_vertical" />
+
+        <Button
+            android:id="@+id/opt_pushfile_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="推送文件"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <include layout="@layout/layout_line_vertical" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/command_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_command_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
