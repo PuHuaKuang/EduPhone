@@ -19,6 +19,7 @@ import com.cmm.incast.client;
 import com.incast.udi.eduphone.CategoryActivity;
 import com.incast.udi.eduphone.R;
 import com.incast.udi.eduphone.adapter.DeviceInfoAdapter;
+import com.incast.udi.eduphone.dialog.RunningDialog;
 import com.incast.udi.eduphone.utils.ToastUtils;
 import com.incast.udi.eduphone.utils.ValidateUtils;
 import com.incast.udi.eduphone.vo.DeviceInfo;
@@ -55,8 +56,10 @@ public class DeviceFragment extends Fragment {
 					break;
 				case LIST_HAS_ITEM:
 
+
 					displayData();
 					break;
+
 				default:
 					break;
 			}
@@ -158,7 +161,7 @@ public class DeviceFragment extends Fragment {
 				mPtrFrame.setVisibility(View.VISIBLE);
 				mTextView.setVisibility(View.INVISIBLE);
 				mPtrFrame.autoRefresh();
-				if(mListItems != null) {
+				if(mListItems != null && mListItems.size() > 0) {
 					mListItems.clear();
 					mAdapter.setListInfos(mListItems);
 					mAdapter.notifyDataSetChanged();
@@ -172,7 +175,6 @@ public class DeviceFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				if (position >= 0) {
-					// show load data
 					// 进到相应的远程控制页面
 					if (mListItems != null) {
 						DeviceInfo _info = mListItems.get(position);
@@ -188,7 +190,7 @@ public class DeviceFragment extends Fragment {
 		mPtrFrame.setVisibility(View.INVISIBLE);
 		mTextView.setVisibility(View.VISIBLE);
 
-		mAdapter = new DeviceInfoAdapter(getActivity(),mListItems);
+		mAdapter = new DeviceInfoAdapter(getActivity(), mListItems);
 		mListView.setAdapter(mAdapter);
 
 		mPtrFrame.setLastUpdateTimeRelateObject(this);
@@ -214,20 +216,15 @@ public class DeviceFragment extends Fragment {
 		mPtrFrame.setPullToRefresh(false);
 		// default is true
 		mPtrFrame.setKeepHeaderWhenRefresh(true);
-/*		mPtrFrame.postDelayed(new Runnable() {
+		mPtrFrame.postDelayed(new Runnable() {
 			@Override
 			public void run() {
 				mPtrFrame.setVisibility(View.VISIBLE);
 				mTextView.setVisibility(View.INVISIBLE);
 				mPtrFrame.autoRefresh();
-				if(mListItems != null) {
-					mListItems.clear();
-					mAdapter.setListInfos(mListItems);
-					mAdapter.notifyDataSetChanged();
-					mListView.invalidate();
-				}
 			}
-		}, 100);*/
+		}, 100);
+
 		return contentView;
 	}
 
