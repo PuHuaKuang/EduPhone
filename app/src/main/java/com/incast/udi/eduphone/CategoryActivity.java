@@ -65,6 +65,9 @@ public class CategoryActivity extends Activity implements View.OnTouchListener{
                 switch (event.getAction()){
                     case MotionEvent.ACTION_DOWN:
 
+
+
+
                         break;
                     case MotionEvent.ACTION_UP:
 
