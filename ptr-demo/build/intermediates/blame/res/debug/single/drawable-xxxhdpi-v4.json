@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sky.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xxxhdpi\\sky.png"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\buildings.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xxxhdpi\\buildings.png"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sun.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xxxhdpi\\sun.png"
+    }
+]

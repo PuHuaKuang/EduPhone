@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\cube_material_dialog_window.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\in.srain.cube\\cube-sdk\\1.0.44.38\\res\\drawable\\cube_material_dialog_window.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\with_long_press_list_item_background.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable\\with_long_press_list_item_background.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\cube_material_card.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\in.srain.cube\\cube-sdk\\1.0.44.38\\res\\drawable\\cube_material_card.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\cube_mints_update_progressbar.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\in.srain.cube\\cube-sdk\\1.0.44.38\\res\\drawable\\cube_mints_update_progressbar.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\cube_material_card_nos_pressed.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\in.srain.cube\\cube-sdk\\1.0.44.38\\res\\drawable\\cube_material_card_nos_pressed.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\cube_material_card_nos.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\in.srain.cube\\cube-sdk\\1.0.44.38\\res\\drawable\\cube_material_card_nos.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\image_border.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable\\image_border.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\cube_dialog_button.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\in.srain.cube\\cube-sdk\\1.0.44.38\\res\\drawable\\cube_dialog_button.xml"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable\\text_view_bg.xml",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable\\text_view_bg.xml"
+    }
+]

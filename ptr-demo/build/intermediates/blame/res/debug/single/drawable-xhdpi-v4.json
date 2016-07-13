@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sun.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xhdpi\\sun.png"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\buildings.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xhdpi\\buildings.png"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\sky.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\res\\drawable-xhdpi\\sky.png"
+    },
+    {
+        "merged": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ptr_rotate_arrow.png",
+        "source": "D:\\puhua.kuang\\android_studio\\AndroidStudioProjects\\EduPhone\\ptr-demo\\build\\intermediates\\exploded-aar\\EduPhone\\ptr-lib\\unspecified\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
+    }
+]
