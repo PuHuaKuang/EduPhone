@@ -39,13 +39,13 @@
             android:gravity="center"/>
 
 
-        <ImageView
+<!--        <ImageView
             android:id="@+id/discover_image_vp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@mipmap/icon_discover_transparent"
-            android:gravity="center" />
+            android:gravity="center" />-->
 
 
         <ImageView

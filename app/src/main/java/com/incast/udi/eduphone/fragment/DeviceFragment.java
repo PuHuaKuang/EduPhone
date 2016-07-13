@@ -36,7 +36,7 @@ public class DeviceFragment extends Fragment {
 	private static final int LIST_HAS_NO_ITEM = 0x01;
 	private static final int LIST_HAS_ITEM = 0x02;
 
-	private ArrayList<DeviceInfo> mListItems = new ArrayList<DeviceInfo>();
+	private ArrayList<DeviceInfo> mListItems = null;
 	private DeviceInfoAdapter mAdapter;
 	private PtrClassicFrameLayout mPtrFrame;
 	private TextView mTextView;
@@ -48,18 +48,13 @@ public class DeviceFragment extends Fragment {
 	private Handler _handler = new Handler(){
 		@Override
 		public void handleMessage(Message msg) {
-
 			switch (msg.what) {
 				case LIST_HAS_NO_ITEM:
-
 					displayNoData();
 					break;
 				case LIST_HAS_ITEM:
-
-
 					displayData();
 					break;
-
 				default:
 					break;
 			}
@@ -71,7 +66,8 @@ public class DeviceFragment extends Fragment {
 
 		int length = 1024;
 		int nTimeOut = 2;
-		mListItems.clear();
+
+		mListItems = new ArrayList<DeviceInfo>();
 		int deviceCount = client.GetDevicesCount(nTimeOut);
 		if(deviceCount > 0) {
 			for(int i = 0 ; i < deviceCount ; i++) {
@@ -161,12 +157,6 @@ public class DeviceFragment extends Fragment {
 				mPtrFrame.setVisibility(View.VISIBLE);
 				mTextView.setVisibility(View.INVISIBLE);
 				mPtrFrame.autoRefresh();
-				if(mListItems != null && mListItems.size() > 0) {
-					mListItems.clear();
-					mAdapter.setListInfos(mListItems);
-					mAdapter.notifyDataSetChanged();
-					mListView.invalidate();
-				}
 			}
 		});
 
@@ -248,12 +238,10 @@ public class DeviceFragment extends Fragment {
 
 	private void displayData() {
 
-		mTextView.setVisibility(View.GONE);
+		mPtrFrame.setVisibility(View.VISIBLE);
+		mTextView.setVisibility(View.INVISIBLE);
 
-		mAdapter.setListInfos(mListItems);
-		mAdapter.notifyDataSetChanged();
-		mListView.invalidate();
-
+		showListItems();
 		mPtrFrame.refreshComplete();
 	}
 
@@ -262,12 +250,30 @@ public class DeviceFragment extends Fragment {
 		mPtrFrame.setVisibility(View.INVISIBLE);
 		mTextView.setVisibility(View.VISIBLE);
 
-		mListItems.clear();
-		mAdapter.setListInfos(mListItems);
-		mAdapter.notifyDataSetChanged();
-		mListView.invalidate();
-
+		clearListItems();
 		mPtrFrame.refreshComplete();
 	}
 
+	public void showListItems(){
+		if(mListItems != null && mListItems.size() > 0) {
+			mAdapter.setListInfos(mListItems);
+			mAdapter.notifyDataSetChanged();
+			mListView.invalidate();
+		}
+	}
+
+	public void clearListItems(){
+		if(mListItems != null && mListItems.size() > 0) {
+			mListItems.clear();
+			mAdapter.setListInfos(mListItems);
+			mAdapter.notifyDataSetChanged();
+			mListView.invalidate();
+		}
+	}
+
+	@Override
+	public void onPause(){
+
+		super.onPause();
+	}
 }

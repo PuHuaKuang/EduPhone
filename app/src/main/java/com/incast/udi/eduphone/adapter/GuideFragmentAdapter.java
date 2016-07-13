@@ -9,7 +9,7 @@ import com.incast.udi.eduphone.fragment.DiscoverFragment;
 import com.incast.udi.eduphone.fragment.MyCenterFragment;
 
 public class GuideFragmentAdapter extends FragmentPagerAdapter {
-	private Fragment[] fragments = new Fragment[] { new DeviceFragment(), new DiscoverFragment(), new MyCenterFragment() };
+	private Fragment[] fragments = new Fragment[] { new DeviceFragment(), new MyCenterFragment() };
 
 	public GuideFragmentAdapter(FragmentManager fm) {
 		super(fm);

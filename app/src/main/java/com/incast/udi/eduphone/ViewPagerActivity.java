@@ -14,11 +14,13 @@ public class ViewPagerActivity extends FragmentActivity implements View.OnClickL
     private Context mContext;
 
     public static final int TAB_DEVICE = 0;
-    public static final int TAB_DISCOVER = 1;
-    public static final int TAB_MYCENTER = 2;
+//    public static final int TAB_DISCOVER = 1;
+    public static final int TAB_MYCENTER = 1;
 
     private ViewPager viewPager;
-    private ImageView main_tab_device, main_tab_discover, main_tab_mycenter;
+    private ImageView main_tab_device;
+//    private ImageView main_tab_discover;
+    private ImageView main_tab_mycenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +36,11 @@ public class ViewPagerActivity extends FragmentActivity implements View.OnClickL
     private void initView() {
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         main_tab_device = (ImageView) findViewById(R.id.device_image_vp);
-        main_tab_discover = (ImageView) findViewById(R.id.discover_image_vp);
+//        main_tab_discover = (ImageView) findViewById(R.id.discover_image_vp);
         main_tab_mycenter = (ImageView) findViewById(R.id.mycenter_image_vp);
 
         main_tab_device.setOnClickListener(this);
-        main_tab_discover.setOnClickListener(this);
+//        main_tab_discover.setOnClickListener(this);
         main_tab_mycenter.setOnClickListener(this);
 
         GuideFragmentAdapter adapter = new GuideFragmentAdapter(getSupportFragmentManager());
@@ -54,17 +56,17 @@ public class ViewPagerActivity extends FragmentActivity implements View.OnClickL
                 switch (id) {
                     case TAB_DEVICE:
                         main_tab_device.setImageResource(R.mipmap.icon_device);
-                        main_tab_discover.setImageResource(R.mipmap.icon_discover_transparent);
+//                        main_tab_discover.setImageResource(R.mipmap.icon_discover_transparent);
                         main_tab_mycenter.setImageResource(R.mipmap.icon_mycenter_transparent);
                         break;
-                    case TAB_DISCOVER:
-                        main_tab_device.setImageResource(R.mipmap.icon_device_transparent);
-                        main_tab_discover.setImageResource(R.mipmap.icon_discover);
-                        main_tab_mycenter.setImageResource(R.mipmap.icon_mycenter_transparent);
-                        break;
+//                    case TAB_DISCOVER:
+//                        main_tab_device.setImageResource(R.mipmap.icon_device_transparent);
+//                        main_tab_discover.setImageResource(R.mipmap.icon_discover);
+//                        main_tab_mycenter.setImageResource(R.mipmap.icon_mycenter_transparent);
+//                        break;
                     case TAB_MYCENTER:
                         main_tab_device.setImageResource(R.mipmap.icon_device_transparent);
-                        main_tab_discover.setImageResource(R.mipmap.icon_discover_transparent);
+//                        main_tab_discover.setImageResource(R.mipmap.icon_discover_transparent);
                         main_tab_mycenter.setImageResource(R.mipmap.icon_mycenter);
                         break;
 
@@ -91,9 +93,9 @@ public class ViewPagerActivity extends FragmentActivity implements View.OnClickL
             case R.id.device_image_vp:
                 viewPager.setCurrentItem(TAB_DEVICE);
                 break;
-            case R.id.discover_image_vp:
-                viewPager.setCurrentItem(TAB_DISCOVER);
-                break;
+//            case R.id.discover_image_vp:
+//                viewPager.setCurrentItem(TAB_DISCOVER);
+//                break;
             case R.id.mycenter_image_vp:
                 viewPager.setCurrentItem(TAB_MYCENTER);
                 break;
